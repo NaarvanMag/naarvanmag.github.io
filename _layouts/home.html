@@ -1,0 +1,28 @@
+---
+layout: default
+---
+
+<div class="row" style="margin-top: 50px">
+{% for cat in site.categories %}
+    <div class="col-sm-12 col-lg-6 offset-lg-3">
+        <h2 class="text-center">شماره {{ cat[0] }}</h2>
+        <hr class="hr" />
+        </div>
+</div>
+
+
+<div class="row">
+    {% for post in cat[1] %}
+      <div class="card col-sm-12 col-lg-3" style="margin-bottom: 10px; border: none;">
+        <a href="{{ post.url }}" style="text-decoration:none;color: inherit;">
+            <img src="{{ post.img }}" class="card-img-top" style="max-height: 210px;">
+            <div class="card-body">
+              <h5 class="card-title text-center">{{ post.title }}</h5>
+            </div>
+        </a>
+        <hr class="hr" />
+      </div>
+    {% endfor %}
+</div>
+
+{% endfor %}
