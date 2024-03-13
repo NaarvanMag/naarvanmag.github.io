@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "گذر ناروَن"
-img: /assets/img/photo_2024-03-05_06-45-34.jpg
+img: /assets/tile/گذر_نارون.png
 tags: داستان
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "اتوبوس"
-img: /assets/img/photo_2024-03-05_06-45-34.jpg
+img: /assets/tile/اتوبوس.png
 tags: داستان
 ---
 
