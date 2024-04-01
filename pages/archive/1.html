@@ -1,0 +1,49 @@
+---
+layout: default
+title: آرشیو شماره اول
+permalink: /archive/1
+---
+
+<div class="col-sm-12 col-lg-8 offset-lg-2">
+
+    <div class="row" style="margin-top: 50px">
+        <h2 class="text-center">شماره اول. آ مثل آغاز، مثل آمستردام</h2>
+    </div>
+    <hr class="hr" />
+    
+    <div class="row">
+        <div class="col-lg-6 col-sm-12">
+            <p>
+                این شماره از نارون درباره آغاز است در نگاه اول شاید اختصاص پرونده آغازین با مفهوم آغاز ساده و پیش پا افتاده به نظر برسد؛ همان قدر که در شماره آخر بخواهد از پایان بگوید. اما آنچه در پس ذهن گردانندگان نارون گذشت ایجاد فرصتی برای همراهان و نویسندگان بود تا روایت اولینهای خود را به اشتراک بگذارند؛ اولینهایی که در عین تشابه دارای ظرایفی متفاوت و منحصر به فرد هستند. در این پرونده از برشهایی کوتاه از تجربیات و خاطرات افراد از تجربه اولینها میخوانیم تا داستانهایی شخصی از روزهای اول مهاجرت پرونده پیش رو آغاز نارون است.
+    
+            </p>
+        </div>
+        <div class="col-lg-4 offset-lg-1 col-sm-12">
+            <img src="/assets/archive/1.jpg" style="max-width:100%;" />
+        </div>
+    </div>
+    <hr class="hr" />
+    
+    <div class="row">
+        {% for cat in site.categories %}
+        {% for post in cat[1] %}
+          <div class="card col-sm-12 col-lg-4" style="margin-bottom: 10px; border: none;">
+            <a href="{{ post.url }}" style="text-decoration:none;color: inherit;">
+                <img src="{{ post.img }}" class="card-img-top">
+                <div class="card-body">
+                  <h6 class="card-title text-center">{{ post.title }}</h6>
+                </div>
+            </a>
+            <hr class="hr" />
+          </div>
+        {% endfor %}
+        {% endfor %}
+    </div>
+    
+    <div class="row">
+        <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1771052523&color=%23369448&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/naarvanmag" title="مجله نارون" target="_blank" style="color: #cccccc; text-decoration: none;">مجله نارون</a> · <a href="https://soundcloud.com/naarvanmag/episode-1" title="قسمت اول: آ.. مثل آغاز، مثل آمستردام" target="_blank" style="color: #cccccc; text-decoration: none;">قسمت اول: آ.. مثل آغاز، مثل آمستردام</a></div>
+    </div>
+
+
+</div>
+
