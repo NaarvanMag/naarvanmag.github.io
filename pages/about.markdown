@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: simple
 title: درباره ما
 permalink: /about/
 ---
