@@ -4,10 +4,11 @@ title: شماره اول. آ مثل آغاز، مثل آمستردام
 shortTitle: شماره اول
 downloadLink: /assets/archive/1.pdf
 poster: /assets/archive/1.jpg
-filter: اول. آ مثل آغاز، مثل آمستردام
+
 authors: مرضیه حیدریان، میثم خسین‌خانی، ایمان دهدار بهبهانی، ملیکا داودزاده، حمیده سالک‌ابراهیمی، معصومه سالک‌ابراهیمی، زهرا محققیان، زهرا نظری، فرشته میراحمدی، نبی میراشه، پریوش (یولی)، امیرحسین ولیدآبادی، هادی معمار تهرانی، سمیرا آب‌نار،  پیمان کریمی، صدف صرافی، نسرین راستگو، نیلوفر زارعی، پویا خاندل، محبوبه اسماعیل‌زاده، مصطفا دهقانی، سمیه شوقیان وصال.
 podcastSrc: https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1771052523&color=%23369448&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true
 podcastLink: https://soundcloud.com/naarvanmag/episode-1
+
 permalink: /archive/1
 ---
 
