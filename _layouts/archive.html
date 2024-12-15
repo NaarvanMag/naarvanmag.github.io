@@ -9,7 +9,7 @@ layout: default
     <hr class="hr" />
     
     <div class="row">
-        <div class="col-lg-6 col-sm-12">
+        <div class="col-lg-6 col-sm-12 order-2 order-lg-1">
             {{ content }}
 
             <h5>نویسندگان این شماره</h5>
@@ -22,8 +22,8 @@ layout: default
             </div>
 
         </div>
-        <div class="col-lg-4 offset-lg-1 col-sm-12">
-            <img src="{{ page.poster }}" style="max-width:100%;" />
+        <div class="col-lg-4 offset-lg-1 col-sm-12 order-1 order-lg-2">
+            <img src="{{ page.poster }}" style="max-width:100%; padding-bottom: 10px;" />
         </div>
     </div>
     <hr class="hr" />
