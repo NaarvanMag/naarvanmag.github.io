@@ -30,12 +30,12 @@ layout: default
     
     <div class="row">
         {% for cat in site.categories %}
+        {% if cat[0] == page.title %}
         <div class="col-sm-12 col-lg-8 offset-lg-2">
             <h2 class="text-center">مقاله‌های منتخب</h2>
             <hr class="hr" />
         </div>
-
-        {% if cat[0] == page.title %}
+        
         {% for post in cat[1] %}
         
           <div class="card col-sm-12 col-lg-4" style="margin-bottom: 10px; border: none;">
@@ -53,7 +53,9 @@ layout: default
         {% endfor %}
     </div>
     
+    {% if page.podcastSrc  %}
     <div class="row">
         <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="{{ page.podcastSrc }}"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/naarvanmag" title="مجله نارون" target="_blank" style="color: #cccccc; text-decoration: none;">مجله نارون</a> · <a href="{{ page.podcastLink }}" title="{{ page.title }}" target="_blank" style="color: #cccccc; text-decoration: none;">{{ page.title }}</a></div>
     </div>
+    {% endif %}
 </div>
