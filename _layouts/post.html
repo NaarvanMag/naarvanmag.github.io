@@ -1,8 +1,8 @@
 ---
 layout: default
 ---
-<div class="row" style="padding: 20px;">
-    <div class="col-lg-3 offset-lg-3 col-sm-12 text-center" style="margin-top: 50px; margin-bottom: 20px;">
+<div class="row" style="padding: 20px; padding-top: 0;">
+    <div class="col-lg-3 offset-lg-3 col-sm-12 text-center" style="padding-bottom: 10px;">
         <h3>{{ page.title }}</h3>
         <h6><span style="font-weight: normal;">از</span> {{ page.author }}</h6>
         <h7>منتشرشده در <a href="{{ page.nlink }}">{{ page.ntext }}</a></h7>
@@ -12,7 +12,7 @@ layout: default
     </div>
 </div>
 <div class="row">
-    <div class="col-lg-6 offset-lg-3 col-sm-12" style="padding: 20px;">
+    <div class="col-lg-6 offset-lg-3 col-sm-12" style="padding-left: 20px; padding-right: 20px;">
         <p>
             {{ content }}
         </p>
