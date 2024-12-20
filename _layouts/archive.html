@@ -14,38 +14,30 @@ layout: default
 
             <h5>همکاران این شماره</h5>
             <p>{{ page.authors }}</p>
-            
-            <div style="margin-bottom: 10px;">
-                <button type="submit" class="btn btn-dark">
-                    <a href="{{ page.downloadLink }}" download="مجله نارون - {{ page.shortTitle }}" style="color: inherit; text-decoration: inherit;">دانلود نسخه کامل {{ page.shortTitle }}</a>
-                </button>
-            </div>
-
         </div>
-        <div class="col-lg-4 offset-lg-1 col-sm-12 order-1 order-lg-2">
+        <div class="col-lg-4 offset-lg-1 col-sm-12 order-1 order-lg-2 text-center" style="margin-bottom: 15px;">
             <img src="{{ page.poster }}" style="max-width:100%; padding-bottom: 10px;" />
+            
+            <button type="submit" class="btn btn-dark">
+                <a href="{{ page.downloadLink }}" download="مجله نارون - {{ page.shortTitle }}">دانلود نسخه کامل {{ page.shortTitle }}</a>
+            </button>
         </div>
     </div>
-    <hr class="hr" />
     
     <div class="row">
         {% for cat in site.categories %}
         {% if cat[0] == page.title %}
-        <div class="col-sm-12 col-lg-8 offset-lg-2">
-            <h2 class="text-center">مقاله‌های منتخب</h2>
-            <hr class="hr" />
-        </div>
+        <div class="col-12 nrv-title"><span>از این شماره بخوانید</span></div>
         
         {% for post in cat[1] %}
         
-          <div class="card col-sm-12 col-lg-4" style="margin-bottom: 10px; border: none;">
-            <a href="{{ post.url }}" style="text-decoration:none;color: inherit;">
+          <div class="card nrv-card col-sm-12 col-lg-4">
+            <a href="{{ post.url }}">
                 <img src="{{ post.img }}" class="card-img-top">
                 <div class="card-body">
                   <h6 class="card-title text-center">{{ post.title }}</h6>
                 </div>
             </a>
-            <hr class="hr" />
           </div>
         
         {% endfor %}
@@ -55,6 +47,7 @@ layout: default
     
     {% if page.podcastSrc  %}
     <div class="row">
+        <div class="col-12 nrv-title"><span>از این شماره بشنوید</span></div>
         <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="{{ page.podcastSrc }}"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/naarvanmag" title="مجله نارون" target="_blank" style="color: #cccccc; text-decoration: none;">مجله نارون</a> · <a href="{{ page.podcastLink }}" title="{{ page.title }}" target="_blank" style="color: #cccccc; text-decoration: none;">{{ page.title }}</a></div>
     </div>
     {% endif %}

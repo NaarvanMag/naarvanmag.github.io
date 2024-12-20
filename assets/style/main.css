@@ -27,3 +27,12 @@ body > .container {
     font-size: larger; 
     padding: 5px 10px;
 }
+
+.nrv-card {
+    margin-bottom: 10px; 
+    border: none;
+}
+.nrv-card > a {
+    color: inherit; 
+    text-decoration: inherit;
+}
