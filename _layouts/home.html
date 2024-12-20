@@ -13,8 +13,8 @@ layout: default
     
       <div class="row">
           {% for post in cat[1] %}
-            <div class="card col-sm-12 col-lg-4" style="margin-bottom: 10px; border: none;">
-              <a href="{{ post.url }}" style="text-decoration:none;color: inherit;">
+            <div class="card nrv-card col-sm-12 col-lg-4">
+              <a href="{{ post.url }}">
                   <img src="{{ post.img }}" class="card-img-top">
                   <div class="card-body">
                     <h6 class="card-title text-center">{{ post.title }}</h6>
