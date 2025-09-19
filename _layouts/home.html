@@ -2,14 +2,13 @@
 layout: default
 ---
 
-<div class="col-12 col-lg-8 offset-lg-2">
+<div class="col-12 col-lg-10 offset-lg-1">
 
   <div class="row">
     
-    <div class="col-lg-2"></div>
     {% for cat in site.categories reversed %}
     {% assign catIndex = {{forloop.length | minus: forloop.index0}} %}
-    <div class="card nrv-card col-6 col-lg-4">
+    <div class="card nrv-card col-4 col-lg-4">
       <a href="/archive/{{ catIndex }}">
           <img src="/assets/archive/{{ catIndex }}.jpg" class="card-img-top">
           <div class="card-body">
@@ -25,7 +24,7 @@ layout: default
     <div class="col-12 nrv-title"><span>از نارون بخوانید</span></div>
 
     {% for cat in site.categories reversed %}
-    <div class="col-12 col-lg-6">
+    <div class="col-12 col-lg-4">
         
         {% for post in cat[1] %}
         <div class="row">
