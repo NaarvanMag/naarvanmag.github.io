@@ -7,31 +7,112 @@ p {
 }
 
 .btn > a {
-    color: inherit; 
+    color: inherit;
     text-decoration: inherit;
 }
 
 body > .container {
-    margin-top: 40px; 
+    margin-top: 40px;
     margin-bottom: 20px;
 }
 
 .nrv-title {
-    margin-bottom: 10px; 
-    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-top: 30px;
 }
 .nrv-title > span {
-    color: #EEEEEE; 
-    background-color: #424242; 
-    font-weight: 700; 
-    font-size: larger; 
-    padding: 5px 10px;
+    color: #EEEEEE;
+    background-color: #424242;
+    font-weight: 700;
+    font-size: larger;
+    padding: 8px 15px;
+    border-radius: 4px;
+    display: inline-block;
 }
 
 .nrv-card {
     border: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 20px;
 }
+
+.nrv-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
 .nrv-card > a {
-    color: inherit; 
+    color: inherit;
     text-decoration: inherit;
+    display: block;
+}
+
+.nrv-card img {
+    transition: opacity 0.3s ease;
+    border-radius: 8px;
+}
+
+.nrv-card:hover img {
+    opacity: 0.9;
+}
+
+.nrv-card .card-body {
+    padding: 15px 10px;
+}
+
+/* Article list improvements */
+.row > .col-12.col-lg-4 > .row {
+    padding: 10px 0;
+    border-radius: 6px;
+    transition: background-color 0.2s ease;
+}
+
+.row > .col-12.col-lg-4 > .row:hover {
+    background-color: #f8f9fa;
+}
+
+.row > .col-12.col-lg-4 > .row img {
+    border-radius: 4px;
+    transition: transform 0.2s ease;
+}
+
+.row > .col-12.col-lg-4 > .row:hover img {
+    transform: scale(1.05);
+}
+
+.row > .col-12.col-lg-4 > .row h6 a {
+    transition: color 0.2s ease;
+}
+
+.row > .col-12.col-lg-4 > .row h6 a:hover {
+    color: #424242;
+}
+
+/* Navigation improvements */
+.nav-link {
+    transition: color 0.2s ease, background-color 0.2s ease;
+    border-radius: 4px;
+    padding: 8px 12px !important;
+}
+
+.nav-link:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+/* Footer improvements */
+footer .nav-link {
+    transition: color 0.2s ease;
+}
+
+footer .nav-link:hover {
+    color: #424242 !important;
+}
+
+footer a svg {
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+footer a:hover svg {
+    transform: scale(1.2);
+    opacity: 0.7;
 }
