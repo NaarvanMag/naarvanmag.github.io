@@ -15,8 +15,8 @@ layout: default
             <h5>همکاران این شماره</h5>
             <p>{{ page.authors }}</p>
         </div>
-        <div class="col-lg-4 offset-lg-1 col-sm-12 order-1 order-lg-2 text-center" style="margin-bottom: 15px;">
-            <img src="{{ page.poster }}" style="max-width:100%; padding-bottom: 10px;" />
+        <div class="col-lg-4 offset-lg-1 col-sm-12 order-1 order-lg-2 text-center nrv-archive-poster">
+            <img src="{{ page.poster }}" class="nrv-archive-poster-img" />
             
             <button type="submit" class="btn btn-dark">
                 <a href="{{ page.downloadLink }}" download="مجله نارون - {{ page.shortTitle }}">دانلود نسخه کامل {{ page.shortTitle }}</a>
@@ -48,7 +48,11 @@ layout: default
     {% if page.podcastSrc  %}
     <div class="row">
         <div class="col-12 nrv-title"><span>از این شماره بشنوید</span></div>
-        <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="{{ page.podcastSrc }}"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/naarvanmag" title="مجله نارون" target="_blank" style="color: #cccccc; text-decoration: none;">مجله نارون</a> · <a href="{{ page.podcastLink }}" title="{{ page.title }}" target="_blank" style="color: #cccccc; text-decoration: none;">{{ page.title }}</a></div>
+        <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="{{ page.podcastSrc }}"></iframe>
+        <div class="nrv-soundcloud-credit">
+            <a href="https://soundcloud.com/naarvanmag" title="مجله نارون" target="_blank">مجله نارون</a> ·
+            <a href="{{ page.podcastLink }}" title="{{ page.title }}" target="_blank">{{ page.title }}</a>
+        </div>
     </div>
     {% endif %}
 </div>
