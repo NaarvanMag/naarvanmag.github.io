@@ -2,45 +2,74 @@
 layout: default
 ---
 
+<!-- Hero Section -->
+<div class="nrv-hero">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-8 text-center">
+        <h1 class="nrv-hero-title">نارون</h1>
+        <p class="nrv-hero-subtitle">مجله‌ای برای بچه‌های آمستردام</p>
+        <div class="nrv-hero-divider"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Main Content -->
 <div class="col-12 col-lg-10 offset-lg-1">
 
-  <div class="row">
-    
-    {% for cat in site.categories reversed %}
-    {% assign catIndex = {{forloop.length | minus: forloop.index0}} %}
-    <div class="card nrv-card col-4 col-lg-4">
-      <a href="/archive/{{ catIndex }}">
-          <img src="/assets/archive/{{ catIndex }}.jpg" class="card-img-top">
-          <div class="card-body">
-            <h6 class="card-title text-center">{{ cat[0] }}</h6>
-          </div>
-      </a>
-    </div>
-    {% endfor %}
+  <!-- Magazine Issues Section -->
+  <div class="nrv-section">
+    <h2 class="nrv-section-title">شماره‌های مجله</h2>
+    <div class="row justify-content-center">
 
+      {% for cat in site.categories reversed %}
+      {% assign catIndex = {{forloop.length | minus: forloop.index0}} %}
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="nrv-magazine-card">
+          <a href="/archive/{{ catIndex }}" class="nrv-magazine-link">
+            <div class="nrv-magazine-image-wrapper">
+              <img src="/assets/archive/{{ catIndex }}.jpg" class="nrv-magazine-image" alt="{{ cat[0] }}">
+              <div class="nrv-magazine-overlay">
+                <span class="nrv-magazine-view">مشاهده شماره</span>
+              </div>
+            </div>
+            <div class="nrv-magazine-body">
+              <h3 class="nrv-magazine-title">{{ cat[0] }}</h3>
+              <p class="nrv-magazine-number">شماره {{ catIndex }}</p>
+            </div>
+          </a>
+        </div>
+      </div>
+      {% endfor %}
+
+    </div>
   </div>
 
-  <div class="row">
-    <div class="col-12 nrv-title"><span>از نارون بخوانید</span></div>
+  <!-- Articles Section -->
+  <div class="nrv-section">
+    <h2 class="nrv-section-title">از نارون بخوانید</h2>
+    <div class="row">
 
-    {% for cat in site.categories reversed %}
-    <div class="col-12 col-lg-4">
-        
+      {% for cat in site.categories reversed %}
+      <div class="col-12 col-lg-4">
         {% for post in cat[1] %}
-        <div class="row">
-          <div class="col-3">
-            <a href="{{ post.url }}"><img src="{{ post.img }}" style="width: 100%;"></a>
-          </div>
-          <div class="col-9" style="padding-top: 10px;">
-            <h6><a href="{{ post.url }}" style="text-decoration:none;color: inherit;">{{ post.title }}</a></h6>
-            <span>از {{ post.author }}</span>
-            <hr class="hr" style="padding-left: 10px; padding-right: 10px;" />
-          </div>
-        </div>
+        <article class="nrv-article-card">
+          <a href="{{ post.url }}" class="nrv-article-link">
+            <div class="nrv-article-image-wrapper">
+              <img src="{{ post.img }}" class="nrv-article-image" alt="{{ post.title }}">
+            </div>
+            <div class="nrv-article-content">
+              <h4 class="nrv-article-title">{{ post.title }}</h4>
+              <p class="nrv-article-author">از {{ post.author }}</p>
+            </div>
+          </a>
+        </article>
         {% endfor %}
+      </div>
+      {% endfor %}
 
     </div>
-    {% endfor %}
   </div>
 
 </div>
