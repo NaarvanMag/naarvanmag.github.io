@@ -22,7 +22,7 @@ body > .container {
 
 /* ===== HERO SECTION ===== */
 .nrv-hero {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #2d3748 0%, #1a202c 100%);
     padding: 80px 0 100px;
     margin-bottom: 60px;
     position: relative;
@@ -36,7 +36,7 @@ body > .container {
     left: 0;
     right: 0;
     bottom: 0;
-    background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
     opacity: 0.3;
 }
 
@@ -94,7 +94,7 @@ body > .container {
     transform: translateX(-50%);
     width: 60px;
     height: 4px;
-    background: linear-gradient(90deg, #667eea, #764ba2);
+    background: linear-gradient(90deg, #4a5568, #2d3748);
     border-radius: 2px;
 }
 
@@ -139,7 +139,7 @@ body > .container {
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(135deg, rgba(102, 126, 234, 0.9), rgba(118, 75, 162, 0.9));
+    background: linear-gradient(135deg, rgba(45, 55, 72, 0.92), rgba(26, 32, 44, 0.92));
     display: flex;
     align-items: center;
     justify-content: center;
@@ -179,7 +179,7 @@ body > .container {
 }
 
 .nrv-magazine-card:hover .nrv-magazine-title {
-    color: #667eea;
+    color: #4a5568;
 }
 
 .nrv-magazine-number {
@@ -245,7 +245,7 @@ body > .container {
 }
 
 .nrv-article-card:hover .nrv-article-title {
-    color: #667eea;
+    color: #2d3748;
 }
 
 .nrv-article-author {
@@ -267,8 +267,8 @@ body > .container {
 }
 
 .nav-link:hover {
-    background-color: rgba(102, 126, 234, 0.1);
-    color: #667eea !important;
+    background-color: rgba(0, 0, 0, 0.05);
+    color: #2d3748 !important;
 }
 
 .dropdown-menu {
@@ -286,7 +286,7 @@ footer .nav-link {
 }
 
 footer .nav-link:hover {
-    color: #667eea !important;
+    color: #2d3748 !important;
 }
 
 footer a.nrv-social-icon i {
@@ -296,7 +296,7 @@ footer a.nrv-social-icon i {
 
 footer a.nrv-social-icon:hover i {
     transform: scale(1.2);
-    color: #667eea;
+    color: #2d3748;
 }
 
 /* ===== POST PAGE STYLES ===== */
@@ -366,7 +366,7 @@ footer a.nrv-social-icon:hover i {
 
 .nrv-podcast-header .nrv-social-icon:hover i {
     transform: scale(1.2);
-    color: #667eea;
+    color: #2d3748;
 }
 
 /* ===== RESPONSIVE ADJUSTMENTS ===== */
