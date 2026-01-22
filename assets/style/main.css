@@ -271,9 +271,14 @@ body > .container {
     color: #2d3748 !important;
 }
 
+.dropdown-menu {
+    border: none;
+}
+
 /* ===== FOOTER IMPROVEMENTS ===== */
 footer {
     margin-top: 60px;
+    background-color: #f8f9fa;
 }
 
 footer .nav-link {
@@ -284,14 +289,84 @@ footer .nav-link:hover {
     color: #2d3748 !important;
 }
 
-footer a svg {
-    transition: transform 0.2s ease, opacity 0.2s ease;
-    fill: #718096;
+footer a.nrv-social-icon i {
+    transition: transform 0.2s ease, color 0.2s ease;
+    color: #718096;
 }
 
-footer a:hover svg {
+footer a.nrv-social-icon:hover i {
     transform: scale(1.2);
-    fill: #2d3748;
+    color: #2d3748;
+}
+
+/* ===== POST PAGE STYLES ===== */
+.nrv-post-header {
+    padding: 20px;
+    padding-top: 0;
+}
+
+.nrv-post-info {
+    padding-bottom: 10px;
+}
+
+.nrv-author-prefix {
+    font-weight: normal;
+}
+
+.nrv-post-image {
+    max-width: 100%;
+}
+
+.nrv-post-content {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* ===== ARCHIVE PAGE STYLES ===== */
+.nrv-archive-poster {
+    margin-bottom: 15px;
+}
+
+.nrv-archive-poster-img {
+    max-width: 100%;
+    padding-bottom: 10px;
+}
+
+.nrv-soundcloud-credit {
+    font-size: 10px;
+    color: #cccccc;
+    line-break: anywhere;
+    word-break: normal;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-family: Interstate, 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Garuda, Verdana, Tahoma, sans-serif;
+    font-weight: 100;
+}
+
+.nrv-soundcloud-credit a {
+    color: #cccccc;
+    text-decoration: none;
+}
+
+/* ===== PODCAST PAGE STYLES ===== */
+.nrv-podcast-header {
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.nrv-podcast-episode {
+    margin-top: 20px;
+}
+
+.nrv-podcast-header .nrv-social-icon i {
+    transition: transform 0.2s ease, color 0.2s ease;
+    color: #718096;
+}
+
+.nrv-podcast-header .nrv-social-icon:hover i {
+    transform: scale(1.2);
+    color: #2d3748;
 }
 
 /* ===== RESPONSIVE ADJUSTMENTS ===== */
