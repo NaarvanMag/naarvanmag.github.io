@@ -1,9 +1,13 @@
+/* ===== BASE STYLES ===== */
 body {
     font-family: Vazirmatn, sans-serif;
+    background-color: #fafafa;
+    color: #333;
 }
 
 p {
     text-align: justify;
+    line-height: 1.8;
 }
 
 .btn > a {
@@ -12,107 +16,303 @@ p {
 }
 
 body > .container {
-    margin-top: 40px;
-    margin-bottom: 20px;
+    margin-top: 0;
+    margin-bottom: 40px;
 }
 
-.nrv-title {
-    margin-bottom: 20px;
-    margin-top: 30px;
+/* ===== HERO SECTION ===== */
+.nrv-hero {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 80px 0 100px;
+    margin-bottom: 60px;
+    position: relative;
+    overflow: hidden;
 }
-.nrv-title > span {
-    color: #EEEEEE;
-    background-color: #424242;
-    font-weight: 700;
-    font-size: larger;
-    padding: 8px 15px;
-    border-radius: 4px;
+
+.nrv-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    opacity: 0.3;
+}
+
+.nrv-hero-title {
+    font-size: 4rem;
+    font-weight: 900;
+    color: #ffffff;
+    margin-bottom: 20px;
+    text-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
+    letter-spacing: 2px;
+    position: relative;
+    z-index: 1;
+}
+
+.nrv-hero-subtitle {
+    font-size: 1.5rem;
+    color: rgba(255, 255, 255, 0.95);
+    margin-bottom: 30px;
+    font-weight: 300;
+    position: relative;
+    z-index: 1;
+}
+
+.nrv-hero-divider {
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(90deg, transparent, #ffffff, transparent);
+    margin: 0 auto;
+    border-radius: 2px;
+    position: relative;
+    z-index: 1;
+}
+
+/* ===== SECTION STYLES ===== */
+.nrv-section {
+    margin-bottom: 80px;
+}
+
+.nrv-section-title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 50px;
+    color: #2d3748;
+    position: relative;
     display: inline-block;
+    width: 100%;
 }
 
-.nrv-card {
-    border: none;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    margin-bottom: 20px;
+.nrv-section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 4px;
+    background: linear-gradient(90deg, #667eea, #764ba2);
+    border-radius: 2px;
 }
 
-.nrv-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+/* ===== MAGAZINE CARDS ===== */
+.nrv-magazine-card {
+    margin-bottom: 40px;
+    transition: transform 0.4s ease;
 }
 
-.nrv-card > a {
+.nrv-magazine-card:hover {
+    transform: translateY(-10px);
+}
+
+.nrv-magazine-link {
+    text-decoration: none;
     color: inherit;
-    text-decoration: inherit;
     display: block;
 }
 
-.nrv-card img {
-    transition: opacity 0.3s ease;
-    border-radius: 8px;
+.nrv-magazine-image-wrapper {
+    position: relative;
+    overflow: hidden;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    margin-bottom: 20px;
 }
 
-.nrv-card:hover img {
-    opacity: 0.9;
+.nrv-magazine-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.5s ease;
 }
 
-.nrv-card .card-body {
-    padding: 15px 10px;
-}
-
-/* Article list improvements */
-.row > .col-12.col-lg-4 > .row {
-    padding: 10px 0;
-    border-radius: 6px;
-    transition: background-color 0.2s ease;
-}
-
-.row > .col-12.col-lg-4 > .row:hover {
-    background-color: #f8f9fa;
-}
-
-.row > .col-12.col-lg-4 > .row img {
-    border-radius: 4px;
-    transition: transform 0.2s ease;
-}
-
-.row > .col-12.col-lg-4 > .row:hover img {
+.nrv-magazine-card:hover .nrv-magazine-image {
     transform: scale(1.05);
 }
 
-.row > .col-12.col-lg-4 > .row h6 a {
-    transition: color 0.2s ease;
+.nrv-magazine-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0.9), rgba(118, 75, 162, 0.9));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.4s ease;
 }
 
-.row > .col-12.col-lg-4 > .row h6 a:hover {
-    color: #424242;
+.nrv-magazine-card:hover .nrv-magazine-overlay {
+    opacity: 1;
 }
 
-/* Navigation improvements */
+.nrv-magazine-view {
+    color: #ffffff;
+    font-size: 1.25rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transform: translateY(10px);
+    transition: transform 0.4s ease;
+}
+
+.nrv-magazine-card:hover .nrv-magazine-view {
+    transform: translateY(0);
+}
+
+.nrv-magazine-body {
+    text-align: center;
+    padding: 0 15px;
+}
+
+.nrv-magazine-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #2d3748;
+    margin-bottom: 8px;
+    transition: color 0.3s ease;
+}
+
+.nrv-magazine-card:hover .nrv-magazine-title {
+    color: #667eea;
+}
+
+.nrv-magazine-number {
+    font-size: 0.95rem;
+    color: #718096;
+    margin: 0;
+}
+
+/* ===== ARTICLE CARDS ===== */
+.nrv-article-card {
+    background: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.nrv-article-card:hover {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    transform: translateY(-3px);
+}
+
+.nrv-article-link {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+}
+
+.nrv-article-image-wrapper {
+    flex-shrink: 0;
+    width: 80px;
+    height: 80px;
+    margin-left: 15px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.nrv-article-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.nrv-article-card:hover .nrv-article-image {
+    transform: scale(1.1);
+}
+
+.nrv-article-content {
+    flex: 1;
+}
+
+.nrv-article-title {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #2d3748;
+    margin-bottom: 6px;
+    line-height: 1.4;
+    transition: color 0.3s ease;
+}
+
+.nrv-article-card:hover .nrv-article-title {
+    color: #667eea;
+}
+
+.nrv-article-author {
+    font-size: 0.875rem;
+    color: #718096;
+    margin: 0;
+}
+
+/* ===== NAVIGATION IMPROVEMENTS ===== */
+.navbar {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
 .nav-link {
     transition: color 0.2s ease, background-color 0.2s ease;
-    border-radius: 4px;
-    padding: 8px 12px !important;
+    border-radius: 6px;
+    padding: 8px 16px !important;
+    font-weight: 500;
 }
 
 .nav-link:hover {
-    background-color: rgba(0, 0, 0, 0.05);
+    background-color: rgba(102, 126, 234, 0.1);
+    color: #667eea !important;
 }
 
-/* Footer improvements */
+/* ===== FOOTER IMPROVEMENTS ===== */
+footer {
+    margin-top: 60px;
+}
+
 footer .nav-link {
     transition: color 0.2s ease;
 }
 
 footer .nav-link:hover {
-    color: #424242 !important;
+    color: #667eea !important;
 }
 
 footer a svg {
     transition: transform 0.2s ease, opacity 0.2s ease;
+    fill: #718096;
 }
 
 footer a:hover svg {
     transform: scale(1.2);
-    opacity: 0.7;
+    fill: #667eea;
+}
+
+/* ===== RESPONSIVE ADJUSTMENTS ===== */
+@media (max-width: 768px) {
+    .nrv-hero {
+        padding: 50px 0 60px;
+    }
+
+    .nrv-hero-title {
+        font-size: 2.5rem;
+    }
+
+    .nrv-hero-subtitle {
+        font-size: 1.1rem;
+    }
+
+    .nrv-section-title {
+        font-size: 2rem;
+    }
+
+    .nrv-magazine-card {
+        margin-bottom: 30px;
+    }
 }
