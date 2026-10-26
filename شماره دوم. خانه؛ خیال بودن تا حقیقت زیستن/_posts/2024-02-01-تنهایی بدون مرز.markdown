@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "تنهایی بدون مرز"
-img: /assets/tile/تنهایی بدون مرز.png
+img: /assets/tile/تنهایی بدون مرز.jpg
 author: عطیه
 ntext: شماره دوم
 nlink: /archive/2

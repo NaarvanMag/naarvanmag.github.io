@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "اتوبوس"
-img: /assets/tile/اتوبوس.png
+img: /assets/tile/اتوبوس.jpg
 author: مرضیه
 ntext: شماره اول
 nlink: /archive/1

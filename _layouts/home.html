@@ -22,7 +22,7 @@ layout: default
             </div>
             <div class="nrv-magazine-body">
               <h3 class="nrv-magazine-title">{{ cat[0] }}</h3>
-              <p class="nrv-magazine-number">شماره {{ catIndex }}</p>
+              <p class="nrv-magazine-number">شماره {{ catIndex | append: "" | replace: "0", "۰" | replace: "1", "۱" | replace: "2", "۲" | replace: "3", "۳" | replace: "4", "۴" | replace: "5", "۵" | replace: "6", "۶" | replace: "7", "۷" | replace: "8", "۸" | replace: "9", "۹" }}</p>
             </div>
           </a>
         </div>
@@ -43,7 +43,7 @@ layout: default
         <article class="nrv-article-card">
           <a href="{{ post.url }}" class="nrv-article-link">
             <div class="nrv-article-image-wrapper">
-              <img src="{{ post.img }}" class="nrv-article-image" alt="{{ post.title }}">
+              <img src="{{ post.img }}" class="nrv-article-image" alt="{{ post.title }}" loading="lazy">
             </div>
             <div class="nrv-article-content">
               <h4 class="nrv-article-title">{{ post.title }}</h4>
