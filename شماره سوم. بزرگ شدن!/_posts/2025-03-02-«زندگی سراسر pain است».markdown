@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "«زندگی سراسر pain است»"
-img: /assets/tile/زندگی سراسر pain است.png
+img: /assets/tile/زندگی سراسر pain است.jpg
 author: مرضیه
 ntext: شماره سوم
 nlink: /archive/3

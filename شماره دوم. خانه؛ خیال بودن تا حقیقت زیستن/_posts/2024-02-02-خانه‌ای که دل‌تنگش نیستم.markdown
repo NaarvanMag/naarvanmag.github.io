@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "خانه‌ای که دل‌تنگش نیستم"
-img: /assets/tile/خانه‌ای که دل‌تنگش نیستم.png
+img: /assets/tile/خانه‌ای که دل‌تنگش نیستم.jpg
 author: نیمارد
 ntext: شماره دوم
 nlink: /archive/2

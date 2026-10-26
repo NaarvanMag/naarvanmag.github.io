@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "نزدیک خود، دور از خود"
-img: /assets/tile/نزدیک خود، دور از خود.png
+img: /assets/tile/نزدیک خود، دور از خود.jpg
 author:  مینا قدیمی عتیق
 ntext: شماره سوم
 nlink: /archive/3

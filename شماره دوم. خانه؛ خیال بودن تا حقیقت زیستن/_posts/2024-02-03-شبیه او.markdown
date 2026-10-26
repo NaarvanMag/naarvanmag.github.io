@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "شبیه او"
-img: /assets/tile/شبیه او.png
+img: /assets/tile/شبیه او.jpg
 author: مصطفا دهقانی
 ntext: شماره دوم
 nlink: /archive/2

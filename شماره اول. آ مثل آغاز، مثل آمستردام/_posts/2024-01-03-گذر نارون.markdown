@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "گذر ناروَن"
-img: /assets/tile/گذر_نارون.png
+img: /assets/tile/گذر_نارون.jpg
 author: ...
 ntext: شماره اول
 nlink: /archive/1

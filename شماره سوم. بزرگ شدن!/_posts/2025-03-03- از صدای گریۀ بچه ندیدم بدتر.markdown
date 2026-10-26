@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "از صدای گریۀ بچه ندیدم بدتر"
-img: /assets/tile/از صدای گریۀ بچه ندیدم بدتر.png
+img: /assets/tile/از صدای گریۀ بچه ندیدم بدتر.jpg
 author: علیرضا رضایی
 ntext: شماره سوم
 nlink: /archive/3
